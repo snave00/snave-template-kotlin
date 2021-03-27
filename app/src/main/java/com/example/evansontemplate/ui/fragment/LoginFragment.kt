@@ -8,16 +8,16 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.evansontemplate.R
 import com.example.evansontemplate.utils.extensions.setSafeOnClickListener
-import kotlinx.android.synthetic.main.fragment_confirmation.*
+import kotlinx.android.synthetic.main.fragment_login.*
 
-class ConfirmationFragment : Fragment() {
+class LoginFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_confirmation, container, false)
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
 
@@ -27,8 +27,8 @@ class ConfirmationFragment : Fragment() {
     }
 
     private fun attachActions() {
-        logout_btn.setSafeOnClickListener {
-            val action = ConfirmationFragmentDirections.actionConfirmationFragmentToLoginFragment()
+        loginBtn.setSafeOnClickListener {
+            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment()
             view?.findNavController()?.navigate(action)
         }
 

@@ -192,10 +192,10 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.5.1'
     implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
 
-//    // Logging Interceptor
-//    implementation ('com.github.ihsanbal:LoggingInterceptor:3.1.0'){
-//        exclude group: 'org.json', module: 'json'
-//    }
+    /*// Logging Interceptor
+    implementation ('com.github.ihsanbal:LoggingInterceptor:3.1.0'){
+        exclude group: 'org.json', module: 'json'
+    } */
 
     testImplementation 'junit:junit:'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

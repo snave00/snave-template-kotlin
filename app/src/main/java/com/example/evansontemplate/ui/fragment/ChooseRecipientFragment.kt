@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.evansontemplate.R
+import com.example.evansontemplate.utils.extensions.setSafeOnClickListener
+import kotlinx.android.synthetic.main.fragment_choose_recipient.*
 
 class ChooseRecipientFragment : Fragment() {
 
@@ -17,4 +20,19 @@ class ChooseRecipientFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_choose_recipient, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        attachActions()
+    }
+
+    private fun attachActions() {
+        next_btn.setSafeOnClickListener {
+            val action = ChooseRecipientFragmentDirections.actionChooseRecipientFragmentToSpecifyAmountFragment()
+            view?.findNavController()?.navigate(action)
+        }
+
+        cancel_btn.setSafeOnClickListener {
+            activity?.onBackPressed()
+        }
+    }
 }

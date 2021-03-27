@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.navigation.findNavController
 import com.example.evansontemplate.R
 import com.example.evansontemplate.ui.base.BaseFragment
@@ -23,6 +24,7 @@ class MainFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         attachActions()
+        // onBackPressed()
     }
 
     private fun attachActions() {
@@ -40,6 +42,17 @@ class MainFragment : BaseFragment() {
             val action = MainFragmentDirections.actionMainFragmentToViewBalanceFragment()
             view?.findNavController()?.navigate(action)
         }
+    }
+
+    private fun onBackPressed() {
+        requireActivity().onBackPressedDispatcher.addCallback(
+                viewLifecycleOwner,
+                object: OnBackPressedCallback(true){
+
+            override fun handleOnBackPressed() {
+                // Do nothing
+            }
+        })
     }
 
 }
