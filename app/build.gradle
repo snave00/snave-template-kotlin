@@ -11,7 +11,7 @@ def releaseVersionCode = 1
 def releaseVersionName = "1.0.0"
 def stagingVersionName = "1.0.0-stg"
 def developmentVersionName = "1.0.0-dev"
-def appName = "appname_v"
+def appName = "sabong_guide_v"
 
 android {
 
