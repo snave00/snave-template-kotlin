@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.LoginFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
 
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.MainFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
 
@@ -59,7 +59,7 @@
 
     <fragment
         android:id="@+id/chooseRecipientFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.ChooseRecipientFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.ChooseRecipientFragment"
         android:label="fragment_choose_recipient"
         tools:layout="@layout/fragment_choose_recipient" >
 
@@ -76,7 +76,7 @@
 
     <fragment
         android:id="@+id/specifyAmountFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.SpecifyAmountFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.SpecifyAmountFragment"
         android:label="fragment_specify_amount"
         tools:layout="@layout/fragment_specify_amount" >
 
@@ -92,19 +92,19 @@
 
     <fragment
         android:id="@+id/viewBalanceFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.ViewBalanceFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.ViewBalanceFragment"
         android:label="fragment_view_balance"
         tools:layout="@layout/fragment_view_balance" />
 
     <fragment
         android:id="@+id/viewTransactionFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.ViewTransactionFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.ViewTransactionFragment"
         android:label="fragment_view_transaction"
         tools:layout="@layout/fragment_view_transaction" />
 
     <fragment
         android:id="@+id/confirmationFragment"
-        android:name="com.snave.sabong_guide.ui.fragment.ConfirmationFragment"
+        android:name="com.template.snave_kotlin.ui.fragment.ConfirmationFragment"
         android:label="fragment_confirmation"
         tools:layout="@layout/fragment_confirmation" >
 
